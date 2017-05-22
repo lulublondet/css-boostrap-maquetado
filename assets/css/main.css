@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "proxima-nova-soft";
+  font-style: normal;
+  src: url("https://use.typekit.net/af/b5823a/00000000000000000001743c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/b5823a/00000000000000000001743c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/b5823a/00000000000000000001743c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+}
+
+body {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;	
+	font-family: "proxima-nova-soft";
+	font-size: 10px; 
+	max-width: 1201px;	
+}
+
+
+.pos-relative {
+	position: relative;
+}
+
+.bold {
+	font-weight: 700;	
+}
+
+.color-white {
+	color: white; 
+}
+
+/*Estilos del prombar */
+.prombar {
+	position: absolute;	
+	background-color: #ed7161;
+	z-index: 100;		
+	width: 100%;
+	top:0px;
+}
+
+.prombar p {
+	font-size: 1.2em;
+		}
+
+
+a.icon-close{
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	position: absolute;
+	top:2px;
+	right:1%;
+	border:1px solid black;	
+
+}
+
+
+/*Secction hero */
+.bg-hero,  
+.bg-icon-hero {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	background-position: center center;
+	background-size:cover;
+	height:460px;
+}
+
+.bg-icon-hero {
+	height: 570px;
+	top: -90px;
+}
+
+span.icon--hero-park {
+	width: 230px;
+	height: 230px;
+	background-size: contain;
+	position: absolute;
+	top:250px;
+	left:13%;
+}
+
+span.icon--hero-bench {
+	position: absolute;	
+	width: 110px;
+	height: 110px;
+	background-size:contain;
+	top:431px;
+	left:65%;			
+}
+
+
+/* Navbar del header */
+div.navbar--desktop {
+	margin-top:2%;
+	left: 5.5%;
+}
+
+nav.navbar {
+	border: none;
+}
+nav.navbar-default{
+	background-color: #9accef;
+	width: 60%;
+	top: 10px;
+	left: 5%;
+}
+
+img.logo-nav {
+	width: 65px;
+	bottom:5px;
+}
+
+
+nav.navbar-default ul.navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+p.navbar-text {
+	position: relative;
+	bottom: 65px;
+	left:-5%;
+}
+
+
+i.glyphicon.glyphicon-user {
+	border: 1px solid;
+	width: 25px;
+	height: 25px;
+	padding-top: .8%;
+	font-size: 1.2em;
+	border-radius: 20px;
+}
+
+span.navbar--email{
+	font-size: 1.2em;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: none;
+}
+
+
+h1.titulo-desktop{
+	font-size: 5em;
+	margin-bottom: 0;
+}
+
+a.btn--desktop{
+		width: 230px;
+		border-radius:20px;
+		background-color: #3498DB;
+		box-shadow: inset 0px 0px 0px 2px transparent;
+		margin-top: 20px;
+	}
+
+
+
+/*Definición de las medias y los breakpoints de Bootstrap */
+
+/*Mobile 0-767*/
+@media screen and (max-width:767px){
+	body{background-color: pink}
+	
+	div.prombar {
+		display: none;
+	}
+
+	header.header--desktop{
+		display: none;
+	}
+		
+	span.icon--hero-park {
+		left:3%;
+	}	
+
+	span.icon--hero-bench {
+		left: 80%;
+	}
+ 	header.header--mobile{
+		top:80px;
+	}
+
+	div.img--mobile img{
+		width: 120px;
+	}	
+	
+	h1.titulo--mobile {
+	 font-size: 1.8em; 
+
+	}
+
+	div.button--mobile {
+		margin-top:25px;
+	}
+	
+	button.btn--mobile{
+		width: 230px;
+		border-radius:20px;
+		background-color: #3498DB;
+		box-shadow: inset 0px 0px 0px 2px transparent;
+	}
+
+	
+
+}
+/*tablet 768-992*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+	body {background-color: orange}
+	
+	header.header--mobile {
+		display: none;
+	}
+
+
+	p.navbar-text {
+		left:-10%;
+	}
+
+
+
+
+}
+/*Destopk 993-1200*/
+@media screen and (min-width:993px){
+
+ header.header--mobile {
+		display: none;
+	}
+
+p.navbar-text {
+	left: -10%;
+	}	
+
+}
+
+
+
+
