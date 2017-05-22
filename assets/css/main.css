@@ -10,7 +10,7 @@ body {
 	box-sizing: border-box;	
 	font-family: "proxima-nova-soft";
 	font-size: 10px; 
-	max-width: 1201px;	
+	
 }
 
 
@@ -26,18 +26,23 @@ body {
 	color: white; 
 }
 
+
+
+.bg-yellow {
+  background-color: #FFCC66;
+}
+
+
+
 /*Estilos del prombar */
 .prombar {
-	position: absolute;	
+	position: fixed;	
 	background-color: #ed7161;
 	z-index: 100;		
 	width: 100%;
 	top:0px;
 }
 
-.prombar p {
-	font-size: 1.2em;
-		}
 
 
 a.icon-close{
@@ -74,7 +79,7 @@ span.icon--hero-park {
 	height: 230px;
 	background-size: contain;
 	position: absolute;
-	top:250px;
+	top:245px;
 	left:13%;
 }
 
@@ -83,7 +88,7 @@ span.icon--hero-bench {
 	width: 110px;
 	height: 110px;
 	background-size:contain;
-	top:431px;
+	top:425px;
 	left:65%;			
 }
 
@@ -153,9 +158,33 @@ a.btn--desktop{
 		background-color: #3498DB;
 		box-shadow: inset 0px 0px 0px 2px transparent;
 		margin-top: 20px;
-	}
+}
+
+section.section--steps {
+	border: 1px solid yellow;
+	margin-top: 170px;
+}
 
 
+div.container--icon--step{
+	border-radius:50%;
+  	width: 220px;
+  	height: 220px;
+  	padding-top: 15px;
+  	margin: auto;
+}
+
+span.icon--step-bond-guarantee,
+span.icon--step-quote,
+span.icon--step-payment{
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin:auto;
+  position: relative;
+  left:12px;
+  top:10px;
+}
 
 /*Definición de las medias y los breakpoints de Bootstrap */
 
@@ -201,6 +230,12 @@ a.btn--desktop{
 		background-color: #3498DB;
 		box-shadow: inset 0px 0px 0px 2px transparent;
 	}
+
+	section.section--steps {
+		border: 1px solid yellow;
+		padding-top: 140px;
+	}
+
 }
 
 /*tablet 768-992*/
@@ -214,19 +249,27 @@ a.btn--desktop{
 	p.navbar-text {
 			left:-10%;
 		}
+
+
+
+
+
 }
 
 
 /*Destopk 993-1200*/
 @media screen and (min-width:993px){
 
- header.header--mobile {
+ 	header.header--mobile {
 		display: none;
 	}
 
-p.navbar-text {
-	left: -10%;
-	}	
+	p.navbar-text {
+		left: -10%;
+	}
+
+
+	
 
 }
 
