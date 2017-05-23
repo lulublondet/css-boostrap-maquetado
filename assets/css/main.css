@@ -13,7 +13,7 @@ body {
 	
 }
 
-
+/*Clases reutilizables */
 .pos-relative {
 	position: relative;
 }
@@ -26,13 +26,30 @@ body {
 	color: white; 
 }
 
-
-
 .bg-yellow {
   background-color: #FFCC66;
 }
 
+.fz-5em {
+	font-size: 5em;
+}
 
+.fz-2-5em {
+	font-size: 1.3em;
+}
+
+
+.bg-gray {
+	 background-color: #F9F9F9;
+}
+
+.bg--info--bold{
+	background-color: #75b9e7;
+}
+
+.mb-50{
+	margin-bottom: 50px;	
+}
 
 /*Estilos del prombar */
 .prombar {
@@ -42,7 +59,6 @@ body {
 	width: 100%;
 	top:0px;
 }
-
 
 
 a.icon-close{
@@ -55,7 +71,6 @@ a.icon-close{
 	border:1px solid black;	
 
 }
-
 
 /*Secction hero */
 .bg-hero,  
@@ -102,6 +117,7 @@ div.navbar--desktop {
 nav.navbar {
 	border: none;
 }
+
 nav.navbar-default{
 	background-color: #9accef;
 	width: 60%;
@@ -113,7 +129,6 @@ img.logo-nav {
 	width: 65px;
 	bottom:5px;
 }
-
 
 nav.navbar-default ul.navbar-nav>li>a {
     color: #fff;
@@ -148,7 +163,7 @@ a:-webkit-any-link {
 
 
 h1.titulo-desktop{
-	font-size: 5em;
+	font-size: 6em;
 	margin-bottom: 0;
 }
 
@@ -160,37 +175,202 @@ a.btn--desktop{
 		margin-top: 20px;
 }
 
+/*<----Section steps ----> */
+
 section.section--steps {
-	border: 1px solid yellow;
-	margin-top: 170px;
+	margin-top: 180px;
 }
 
+section.section--steps .row{
+	display: flex;	
+	justify-content: center;
+	align-items: center;				
+	padding-left: 150px;	
+	height: auto;
+}
 
 div.container--icon--step{
 	border-radius:50%;
-  	width: 220px;
-  	height: 220px;
-  	padding-top: 15px;
-  	margin: auto;
+  	width: 210px;
+  	height: 210px;
+	display: flex;
+	justify-content: center;
+	align-items: center;						
 }
 
-span.icon--step-bond-guarantee,
-span.icon--step-quote,
-span.icon--step-payment{
+.icon--steps {
   width: 180px;
   height: 180px;
-  display: block;
-  margin:auto;
-  position: relative;
+  position: relative;		
   left:12px;
   top:10px;
 }
+
+section.section--steps p{
+	line-height: 2.8em;
+	font-size: 1.8em;					
+}
+
+
+/* Seccion promisses --> */
+
+section.section--promisse {
+	
+	padding-top: 50px;	
+}
+
+section.section--promisse div.container div.row.titulo{
+	padding-bottom: 20px;
+
+}
+
+
+section.section--promisse div.container div.row.titulo h2{
+		font-size: 6em;	
+}
+
+section.section--promisse div.container div.row.titulo h4.hidden-xs{
+	font-size: 	2.5em;
+}
+
+
+section.section--promisse div.container div.row.detalle{
+	padding-bottom: 80px;
+	}
+
+
+
+
+section.section--promisse div.container div.row.detalle div.col-xs-12.col-md-4{
+	height: 250px;
+	padding-top: 15px;		
+}
+
+section.section--promisse div.container div.row.detalle div.col-xs-12.col-md-4 h5{
+ font-size: 2.3em;	
+}
+
+
+section.section--promisse div.container div.row.detalle div.col-xs-12.col-md-4 p{
+ font-size: 2em;		 
+}
+
+
+
+section.section--promisse h2{
+	padding-bottom: 20px;			
+}
+
+
+
+
+
+
+
+/*section comunity */
+
+.section--comunity{
+  padding: 100px;	
+   	
+}
+
+
+
+
+.panel-heading {
+	text-align: center;
+  	padding: 0px 4px 15px 15px;
+  	background-color: #fff !important;
+ }
+
+
+.icon--promisse {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-size: cover;
+}
+
+
+a.icon--arrow-down {
+	width: 25px;
+  	height: 25px;
+  	background-size: cover;
+  	position: absolute;
+  	right:8%;
+  	top:8%; 
+ }
+
+.icon--comunity
+ {
+  width: 100px;
+  height: 100px;
+  position:absolute;		
+}
+
+img.foto--comunity{
+	border-radius: 50%;
+	position: relative;	
+	top:2px;	
+	}
+
+
+
+.section--checklist {
+    padding-top: 100px;
+    background-color: #3498DB;
+}
+
+
+div.list-up, div.list-down{
+	padding-top: 20px;	
+	background-color: white;
+	color:#666;
+	border-radius:5px;
+}
+
+div.listas-check div.list-up ul{
+	height: 600px;
+}
+
+div.listas-check div.list-down ul{
+	height: 200px;
+}
+
+div.listas-check li{
+    padding: 20px 5px 10px 25px;
+    border-top: 1px solid #eee;		
+    font-size: 1.3em;	
+	letter-spacing: .2px;
+	font-weight: 600;		
+
+}
+
+
+
+
+span.glyphicon-ok {
+	position: relative;	
+	right:8px;
+	font-size: .85em;	
+	margin-right: 20px;	
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Definición de las medias y los breakpoints de Bootstrap */
 
 /*Mobile 0-767*/
 @media screen and (max-width:767px){
-	body{background-color: pink}
+
 	
 	div.prombar {
 		display: none;
@@ -230,11 +410,89 @@ span.icon--step-payment{
 		background-color: #3498DB;
 		box-shadow: inset 0px 0px 0px 2px transparent;
 	}
-
+	
 	section.section--steps {
-		border: 1px solid yellow;
-		padding-top: 140px;
+		margin-top: 300px;
+		height: auto;
+	   padding-bottom:0;			
 	}
+
+  section.section--steps .row{
+	
+	display: block;	
+	padding-left: 15px;	
+	padding-top:15px;	
+	
+  }
+
+  div.container--icon--step{
+	border-radius:50%;
+  	width: 180px;
+  	height: 180px;
+	display:block;
+	margin:auto;
+}
+.icon--steps {
+  width: 180px;
+  height: 180px;
+  display: block;		
+
+}
+	
+	section.section--steps h2 {
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+
+	section.section--steps p{
+		line-height: 1.2em;
+		text-align: center;
+		font-size: 1.5em;
+		padding-bottom: 20px;					
+	
+	}
+
+	section.section--promisse div.container div.row.titulo h2{
+		font-size: 2.8em;	
+	}
+
+	section.section--promisse div.container div.row.titulo h4.visible-xs-block{
+		font-size: 1.5em;	
+	}	
+    
+   section.section--promisse div.container div.row.detalle div.col-xs-12.col-md-4{
+	height: auto;				
+	padding:0;				
+  }
+  
+  .panel-heading {
+	text-align: center;
+	padding: 0;		
+  	background-color: #fff !important;
+  	border-bottom: none;	
+
+ }
+
+	.icon--promisse {
+	  width: 40px;
+	  height: 40px;
+	  position: relative;
+	  background-size: cover;
+	  left:-40%;
+	  top: 20px; 
+	 margin-left: 0;
+   }
+
+
+
+.icon--comunity {
+	left:41.8%;
+	z-index: 200;
+	top:45px;
+
+}
+
 
 }
 
@@ -249,10 +507,82 @@ span.icon--step-payment{
 	p.navbar-text {
 			left:-10%;
 		}
+	
+	section.section--steps {
+	
+	margin-top: 300px;
+	height: auto;
+	padding-bottom:0;			
+	}
+
+  section.section--steps .row{
+	
+	display: block;	
+	padding-left: 15px;	
+	padding-top:15px;	
+	
+  }
+
+  div.container--icon--step{
+	border-radius:50%;
+  	width: 180px;
+  	height: 180px;
+	display:block;
+	margin:auto;
+
+}
+
+.icon--steps {
+  width: 180px;
+  height: 180px;
+  display: block;		
+
+}
+	
+section.section--steps h2 {
+		font-size: 2.5em;
+		text-align: center;
+	}
 
 
+	section.section--steps p{
+		line-height: 1.2em;
+		text-align: center;
+		font-size: 1.5em;
+		padding-bottom: 20px;					
+	
+	}
 
+	section.section--promisse div.container div.row.titulo h2{
+		font-size: 2.8em;	
+	}
 
+	section.section--promisse div.container div.row.titulo h4.visible-xs-block{
+		font-size: 1.5em;	
+	}	
+    
+   section.section--promisse div.container div.row.detalle div.col-xs-12.col-md-4{
+	height: auto;				
+	padding:0;				
+  }
+  
+  .panel-heading {
+	text-align: center;
+	padding: 0;		
+  	background-color: #fff !important;
+  	border-bottom: none;	
+
+ }	
+
+	.icon--promisse {
+		width: 40px;
+		height: 40px;
+		position: relative;
+		background-size: cover;
+		left:-40%;
+		top: 20px; 
+		margin-left: 0;
+	}
 
 }
 
